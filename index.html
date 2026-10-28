@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proteção Também é Saúde | Medicina Veterinária e responsabilidade profissional</title>
+  <meta name="description" content="Projeto acadêmico informativo sobre os riscos do exercício irregular da Medicina Veterinária.">
+  <!-- Fontes arredondadas: Fredoka (títulos) e Nunito (textos). Precisam de internet. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== CABEÇALHO ========== -->
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="#inicio" class="logo">
+        <!-- Logo simples: coração com batimento -->
+        <svg viewBox="0 0 48 44" width="44" height="40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M24 41C10 31 4 23 4 15a10 10 0 0 1 20-3 10 10 0 0 1 20 3c0 8-6 16-20 26Z"/>
+          <path d="M9 23h9l3-7 5 13 3-6h10"/>
+        </svg>
+        <span class="logo-texto">
+          <strong>PROTEÇÃO</strong>
+          <span>TAMBÉM É SAÚDE</span>
+        </span>
+      </a>
+
+      <button class="menu-botao" id="menuBotao" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#consequencias">Consequências</a>
+        <a href="#legislacao">Legislação</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== BANNER PRINCIPAL ========== -->
+    <section class="hero" id="inicio">
+      <div class="container hero-conteudo">
+        <p class="destaque">USO IRREGULAR DA PROFISSÃO</p>
+        <h1>Medicina Veterinária é coisa séria!</h1>
+        <p class="hero-texto">O exercício irregular da profissão pode colocar em risco a saúde dos animais, a segurança dos tutores e a confiança da sociedade.</p>
+        <a href="#consequencias" class="botao botao-contorno">Conheça os riscos</a>
+        <p class="hero-frase">Medicina Veterinária e responsabilidade profissional.</p>
+      </div>
+
+      <!-- ESPAÇO PARA IMAGEM: salve a imagem como images/hero-cachorro.jpeg -->
+      <figure class="hero-figura espaco-imagem">
+        <img src="images/hero-cachorro.jpeg" alt="Cachorro com médico-veterinário">
+      </figure>
+    </section>
+
+    <!-- ========== O QUE VOCÊ ENCONTRA ========== -->
+    <section class="secao secao-bege" id="recursos">
+      <div class="container encontra">
+        <div class="encontra-texto">
+          <h2>O que você encontra no nosso site?</h2>
+          <p>Informações educativas sobre os riscos do exercício irregular da Medicina Veterinária, os grupos afetados e as fontes oficiais para consulta.</p>
+        </div>
+        <div class="grade-icones">
+          <a href="#animal" class="item-icone"><span class="icone">🐾</span>Consequências para os animais</a>
+          <a href="#tutor" class="item-icone"><span class="icone">🏠</span>Prejuízos para os tutores</a>
+          <a href="#profissional" class="item-icone"><span class="icone">🩺</span>Impactos para médicos-veterinários</a>
+          <a href="#estudantes" class="item-icone"><span class="icone">🎓</span>Impactos para estudantes e instituições</a>
+          <a href="#sociedade" class="item-icone"><span class="icone">🌎</span>Prejuízos para a sociedade</a>
+          <a href="#faq" class="item-icone"><span class="icone">🛡️</span>Como identificar e denunciar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PREJUÍZOS ========== -->
+    <section class="secao" id="consequencias">
+      <div class="container">
+        <h2>Quais são os prejuízos?</h2>
+        <p class="intro">O exercício irregular da profissão gera impactos em várias esferas. Entenda como isso afeta cada público.</p>
+
+        <div class="grade-cartoes">
+          <article class="cartao" id="animal">
+            <span class="icone">🐕</span>
+            <h3>Animal</h3>
+            <ul>
+              <li>Agravamento de doenças</li>
+              <li>Lesões e sofrimento</li>
+              <li>Procedimentos inadequados</li>
+              <li>Atraso no tratamento correto</li>
+            </ul>
+          </article>
+
+          <article class="cartao" id="tutor">
+            <span class="icone">🏠</span>
+            <h3>Tutor</h3>
+            <ul>
+              <li>Despesas adicionais</li>
+              <li>Preocupação e insegurança</li>
+              <li>Perda de confiança nos serviços</li>
+              <li>Necessidade de informações claras e confiáveis</li>
+            </ul>
+          </article>
+
+          <article class="cartao" id="profissional">
+            <span class="icone">🩺</span>
+            <h3>Médico-veterinário e profissão</h3>
+            <ul>
+              <li>Desvalorização profissional</li>
+              <li>Concorrência irregular</li>
+              <li>Prejuízo à confiança nos serviços veterinários</li>
+            </ul>
+          </article>
+
+          <article class="cartao" id="estudantes">
+            <span class="icone">🎓</span>
+            <h3>Estudantes e instituições</h3>
+            <ul>
+              <li>Riscos relacionados a atividades sem preparo ou autorização</li>
+              <li>Possíveis consequências acadêmicas</li>
+              <li>Importância da orientação e da supervisão</li>
+            </ul>
+          </article>
+
+          <article class="cartao" id="sociedade">
+            <span class="icone">🌎</span>
+            <h3>Sociedade</h3>
+            <ul>
+              <li>Redução da confiança nos serviços</li>
+              <li>Possíveis riscos à saúde coletiva</li>
+              <li>Necessidade de práticas responsáveis e seguras</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LEGISLAÇÃO ========== -->
+    <section class="legislacao" id="legislacao">
+      <div class="container legislacao-grade">
+        <div class="legislacao-intro">
+          <p class="destaque">LEGISLAÇÃO</p>
+          <h2>Onde a lei trata do assunto</h2>
+          <p>Referências citadas no trabalho acadêmico. Leia sempre o texto completo nas fontes oficiais.</p>
+          <!-- ESPAÇO PARA IMAGEM: salve a imagem como images/legislacao.jpeg -->
+          <figure class="espaco-imagem">
+            <img src="images/legislacao.jpeg" alt="Imagem ilustrando a legislação veterinária">
+          </figure>
+        </div>
+
+        <div class="legislacao-lista">
+          <article class="lei">
+            <h3>Lei nº 5.517/1968</h3>
+            <p>Regulamenta o exercício da Medicina Veterinária.</p>
+            <a class="botao botao-escuro" href="https://www.planalto.gov.br/ccivil_03/leis/l5517compilada.htm" target="_blank" rel="noopener">Consultar legislação</a>
+          </article>
+          <article class="lei">
+            <h3>Lei nº 9.605/1998</h3>
+            <p>Trata de sanções relacionadas a condutas lesivas ao meio ambiente, incluindo situações previstas na legislação de proteção animal.</p>
+            <a class="botao botao-escuro" href="https://www.planalto.gov.br/ccivil_03/leis/l9605.htm" target="_blank" rel="noopener">Consultar legislação</a>
+          </article>
+          <article class="lei">
+            <h3>Código Penal (Decreto-Lei nº 2.848/1940)</h3>
+            <p>Atenção ao artigo 282 e à alteração legislativa mencionada no trabalho acadêmico. Consulte o texto atualizado na fonte oficial.</p>
+            <a class="botao botao-escuro" href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm" target="_blank" rel="noopener">Consultar legislação</a>
+          </article>
+          <article class="lei">
+            <h3>Código de Ética do Médico-Veterinário</h3>
+            <p>Resolução CFMV nº 1.138/2016.</p>
+            <a class="botao botao-escuro" href="https://manual.cfmv.gov.br/arquivos/resolucao/1138.pdf" target="_blank" rel="noopener">Consultar legislação</a>
+          </article>
+          <p class="aviso">As consequências dependem das circunstâncias de cada caso. Este conteúdo é educativo e não substitui orientação jurídica ou profissional.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== POR QUE IMPORTA ========== -->
+    <section class="secao secao-bege" id="importa">
+      <div class="container importa">
+        <div class="importa-texto">
+          <h2>Por que isso importa?</h2>
+          <p>O exercício irregular pode prejudicar os animais, gerar perdas aos tutores e afetar a confiança da sociedade na Medicina Veterinária. Não é apenas um problema individual: é uma questão coletiva.</p>
+          <p>Por isso, ética, biossegurança, supervisão adequada e respeito aos limites de formação e atuação são pontos essenciais para um atendimento seguro.</p>
+        </div>
+        <!-- ESPAÇO PARA IMAGEM: salve a imagem como images/importa.jpeg -->
+        <figure class="espaco-imagem">
+          <img src="images/importa.jpeg" alt="Imagem sobre a importância da atuação responsável">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== BANNER DE CONSCIENTIZAÇÃO ========== -->
+    <section class="conscientizacao" id="conscientizacao">
+      <div class="container conscientizacao-conteudo">
+        <div class="conscientizacao-texto">
+          <h2>Proteja os animais. Valorize a profissão. Fortaleça a sociedade.</h2>
+          <p>A atuação responsável contribui para o bem-estar animal, a segurança dos tutores e a confiança nos serviços veterinários.</p>
+          <a href="#legislacao" class="botao botao-contorno">Ver legislação e fontes oficiais</a>
+        </div>
+        <!-- ESPAÇO PARA IMAGEM: salve a imagem como images/conscientizacao.jpeg -->
+        <figure class="espaco-imagem">
+          <img src="images/conscientizacao.jpeg" alt="Veterinário cuidando de um animal">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="secao" id="faq">
+      <div class="container faq">
+        <h2>Dúvidas frequentes</h2>
+        <p class="intro">Respostas gerais e educativas. Cada situação deve ser avaliada pelas autoridades competentes.</p>
+
+        <div class="acordeao">
+          <div class="faq-item">
+            <button class="faq-pergunta" aria-expanded="false">O que caracteriza o exercício irregular da Medicina Veterinária?<span class="faq-sinal">+</span></button>
+            <div class="faq-resposta"><p>De modo geral, é a prática de atos privativos do médico-veterinário por quem não possui a formação e o registro exigidos pela legislação. A classificação de cada situação depende das circunstâncias; para dúvidas, consulte o CRMV da sua região.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-pergunta" aria-expanded="false">Quais prejuízos essa prática pode causar aos animais?<span class="faq-sinal">+</span></button>
+            <div class="faq-resposta"><p>Pode haver diagnósticos errados, tratamentos inadequados, atraso no cuidado correto, agravamento de doenças e sofrimento desnecessário. Nem toda situação resulta em dano, mas o risco existe quando falta preparo técnico.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-pergunta" aria-expanded="false">Como os tutores podem buscar informações confiáveis?<span class="faq-sinal">+</span></button>
+            <div class="faq-resposta"><p>Verifique o registro do profissional no CRMV, peça informações claras sobre o procedimento e consulte fontes oficiais, como o CFMV e os conselhos regionais. Desconfie de promessas milagrosas ou de falta de transparência.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-pergunta" aria-expanded="false">O que um estudante deve fazer quando tiver dúvidas sobre os limites de sua atuação?<span class="faq-sinal">+</span></button>
+            <div class="faq-resposta"><p>Procure o professor, o supervisor de estágio ou a coordenação do curso antes de realizar qualquer atividade. A atuação deve ocorrer com orientação, supervisão e autorização adequadas, conforme as regras da instituição e a legislação.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-pergunta" aria-expanded="false">Onde consultar a legislação?<span class="faq-sinal">+</span></button>
+            <div class="faq-resposta"><p>No portal do Planalto (leis federais) e no site do CFMV (resoluções e Código de Ética). Os links estão na seção Legislação e no rodapé desta página.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-pergunta" aria-expanded="false">Como comunicar uma possível irregularidade?<span class="faq-sinal">+</span></button>
+            <div class="faq-resposta"><p>Entre em contato com o CRMV do seu estado, que orienta sobre o procedimento adequado. Em caso de suspeita de maus-tratos ou outros ilícitos, procure também as autoridades competentes. Reúna informações, como datas, local e registros, sem fazer acusações precipitadas.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer class="rodape" id="sobre">
+    <div class="container rodape-grade">
+      <div>
+        <p class="rodape-nome"><strong>PROTEÇÃO</strong> TAMBÉM É SAÚDE</p>
+        <p>Medicina Veterinária e responsabilidade profissional.</p>
+        <p class="rodape-frase">"Animais saudáveis, tutores mais seguros, uma sociedade mais forte."</p>
+      </div>
+      <div>
+        <h3>Seções</h3>
+        <a href="#inicio">Início</a>
+        <a href="#consequencias">Consequências</a>
+        <a href="#legislacao">Legislação</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#faq">Dúvidas frequentes</a>
+      </div>
+      <div>
+        <h3>Fontes oficiais</h3>
+        <a href="https://www.planalto.gov.br/ccivil_03/leis/l5517compilada.htm" target="_blank" rel="noopener">Lei nº 5.517/1968</a>
+        <a href="https://www.planalto.gov.br/ccivil_03/leis/l9605.htm" target="_blank" rel="noopener">Lei nº 9.605/1998</a>
+        <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm" target="_blank" rel="noopener">Código Penal</a>
+        <a href="https://manual.cfmv.gov.br/arquivos/resolucao/1138.pdf" target="_blank" rel="noopener">Código de Ética (CFMV)</a>
+      </div>
+      <div>
+        <h3>Projeto acadêmico</h3>
+        <!-- Preencha com os dados do grupo -->
+        <p>Instituição: [preencher]</p>
+        <p>Curso e disciplina: [preencher]</p>
+        <p>Integrantes: [preencher]</p>
+      </div>
+    </div>
+    <p class="rodape-fim">Proposta informativa e educativa para fins acadêmicos. Não substitui orientação jurídica ou profissional.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
