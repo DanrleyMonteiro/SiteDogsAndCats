@@ -1,361 +1,210 @@
 /* ===== VARIÁVEIS (cores e imagens fáceis de trocar) ===== */
-
 :root {
-
-  --azul-escuro: #173B5B;
-
-  --azul-medio: #4F91C6;
-
-  --azul-claro: #DCEFFA;
-
-  --bege: #F4F9FD;
-
+  --azul-escuro: #12294a;
+  --azul-medio: #2a5a9a;
+  --azul-claro: #dbe7f5;
+  --bege: #f0f5fb;
   --branco: #ffffff;
-
-  --texto: #203746;
-
-  --texto-suave: #526B7A;
-
-  --sombra: 0 4px 14px rgba(23, 59, 91, 0.12);
+  --texto: #1b2638;
+  --texto-suave: #4a5a70;
+  --sombra: 0 4px 14px rgba(18, 41, 74, 0.14);
 
   /* Para trocar as imagens: salve-as na pasta "images" e ajuste os nomes aqui.
-
-     Enquanto não existirem, o degradê verde aparece no lugar. */
-
+     Enquanto não existirem, o degradê azul aparece no lugar. */
   --img-hero: url("images/hero-veterinario.jpeg");
-
 }
 
 /* ===== BASE ===== */
-
-\* { box-sizing: border-box; margin: 0; padding: 0; }
-
+* { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-
 body {
-
   font-family: "Nunito", "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
-
   color: var(--texto);
-
   background: var(--branco);
-
   line-height: 1.6;
-
 }
-
 img, svg { max-width: 100%; }
-
 a { color: inherit; }
-
 h1, h2, h3 { font-family: "Fredoka", "Arial Rounded MT Bold", "Trebuchet MS", sans-serif; font-weight: 600; line-height: 1.2; }
-
 h2 { font-size: 2rem; color: var(--azul-escuro); margin-bottom: 0.6rem; }
-
 .container { width: min(1120px, 92%); margin: 0 auto; }
-
 .secao { padding: 4rem 0; }
-
 .secao-bege { background: var(--bege); }
-
 .intro { color: var(--texto-suave); margin-bottom: 2rem; max-width: 62ch; }
-
-.destaque { color: #9DD8F5; font-size: 0.85rem; letter-spacing: 0.12em; margin-bottom: 0.6rem; }
-
+.destaque { color: #9cc2ee; font-size: 0.85rem; letter-spacing: 0.12em; margin-bottom: 0.6rem; }
 :focus-visible { outline: 3px solid #f0c75e; outline-offset: 2px; }
 
 /* ===== BOTÕES ===== */
-
 .botao {
-
   display: inline-block;
-
   padding: 0.85rem 1.6rem;
-
   border-radius: 999px;
-
   text-decoration: none;
-
   font-weight: bold;
-
   transition: transform 0.2s, background 0.2s;
-
 }
-
 .botao:hover { transform: translateY(-2px); }
-
-.botao-contorno { border: 2px solid #9DD8F5; color: var(--branco); background: rgba(255, 255, 255, 0.08); }
-
+.botao-contorno { border: 2px solid #9cc2ee; color: var(--branco); background: rgba(255, 255, 255, 0.08); }
 .botao-contorno:hover { background: rgba(255, 255, 255, 0.2); }
-
 .botao-escuro { background: var(--azul-escuro); color: var(--branco); font-size: 0.9rem; padding: 0.6rem 1.2rem; }
-
 .botao-escuro:hover { background: var(--azul-medio); }
 
+/* ===== BARRA DA INSTITUIÇÃO (topo) ===== */
+.barra-instituicao { background: var(--branco); border-bottom: 1px solid #dde5f0; }
+.barra-conteudo { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.6rem 0; }
+.barra-conteudo img { height: 68px; width: auto; display: block; }
+.barra-conteudo span { color: var(--texto-suave); font-size: 0.85rem; text-align: right; }
+
 /* ===== CABEÇALHO ===== */
-
 .cabecalho { background: var(--azul-escuro); color: var(--branco); position: sticky; top: 0; z-index: 10; }
-
 .cabecalho-conteudo { display: flex; align-items: center; justify-content: space-between; padding: 0.7rem 0; }
-
 .logo { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
-
 .logo-texto { display: flex; flex-direction: column; line-height: 1.1; font-size: 0.8rem; letter-spacing: 0.08em; }
-
 .logo-texto strong { font-size: 1.1rem; }
-
 .menu { display: flex; gap: 1.6rem; }
-
 .menu a { text-decoration: none; font-size: 0.95rem; padding: 0.3rem 0; border-bottom: 2px solid transparent; }
-
-.menu a:hover { border-color: #9DD8F5; }
-
+.menu a:hover { border-color: #9cc2ee; }
 .menu-botao { display: none; background: none; border: 0; cursor: pointer; padding: 0.5rem; }
-
 .menu-botao span { display: block; width: 26px; height: 3px; background: var(--branco); margin: 5px 0; border-radius: 2px; }
 
 /* ===== BANNER PRINCIPAL ===== */
-
 .hero {
-
   min-height: 560px;
-
   display: flex;
-
   align-items: center;
-
   color: var(--branco);
-
   /* camada escura por cima da imagem + degradê de reserva */
-
   background:
-
-    linear-gradient(90deg, rgba(14, 43, 68, 0.92) 0%, rgba(14, 43, 68, 0.6) 55%, rgba(14, 43, 68, 0.3) 100%),
-
+    linear-gradient(90deg, rgba(8, 22, 46, 0.92) 0%, rgba(8, 22, 46, 0.6) 55%, rgba(8, 22, 46, 0.3) 100%),
     var(--img-hero) center / cover no-repeat,
-
-    linear-gradient(135deg, #173B5B, #79B9E3);
-
+    linear-gradient(135deg, #12294a, #3a6db5);
 }
-
 .hero { position: relative; }
-
 .hero-conteudo { padding: 4rem 0; }
-
 /* Imagem do cachorro (à direita no computador) */
-
-.hero .hero-figura { position: absolute; right: 8%; bottom: 40px; width: min(480px, 38vw); color: #D9F0FC; box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35); }
-
+.hero .hero-figura { position: absolute; right: 8%; bottom: 40px; width: min(340px, 28vw); color: #d6e4f7; box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35); }
 .hero h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); max-width: 14ch; margin-bottom: 1rem; }
-
 .hero-texto { max-width: 46ch; font-size: 1.1rem; margin-bottom: 1.8rem; }
-
 .hero-frase { margin-top: 2rem; font-size: 0.9rem; opacity: 0.85; }
 
 /* ===== O QUE VOCÊ ENCONTRA ===== */
-
 .encontra { display: grid; grid-template-columns: 1fr 2fr; gap: 2.5rem; align-items: center; }
-
 .encontra-texto p { color: var(--texto-suave); }
-
 .grade-icones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-
 .item-icone {
-
   display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.5rem;
-
   padding: 1.1rem 0.8rem; text-decoration: none; font-size: 0.9rem; color: var(--azul-escuro);
-
   background: var(--branco); border-radius: 20px; box-shadow: var(--sombra);
-
   transition: transform 0.2s;
-
 }
-
 .item-icone:hover { transform: translateY(-3px); }
-
 .icone {
-
   display: inline-flex; align-items: center; justify-content: center;
-
   width: 52px; height: 52px; font-size: 1.6rem; border-radius: 50%; background: var(--azul-claro);
-
 }
 
 /* ===== CARTÕES DE PREJUÍZOS ===== */
-
 .grade-cartoes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
-
 .cartao { background: var(--bege); border-radius: 22px; padding: 1.6rem; box-shadow: var(--sombra); }
-
 .cartao h3 { color: var(--azul-escuro); font-size: 1.25rem; margin: 0.8rem 0 0.6rem; }
-
 .cartao ul { list-style: none; }
-
 .cartao li { position: relative; padding-left: 1.1rem; margin-bottom: 0.4rem; color: var(--texto-suave); font-size: 0.95rem; }
-
 .cartao li::before { content: ""; position: absolute; left: 0; top: 0.65em; width: 6px; height: 6px; border-radius: 50%; background: var(--azul-medio); }
 
 /* ===== LEGISLAÇÃO ===== */
-
 .legislacao { background: var(--azul-escuro); color: var(--branco); padding: 4rem 0; }
-
 .legislacao-grade { display: grid; grid-template-columns: 1fr 1.6fr; gap: 2.5rem; align-items: start; }
-
 .legislacao h2 { color: var(--branco); }
-
 .legislacao-lista { background: var(--bege); color: var(--texto); border-radius: 24px; padding: 1.6rem; display: grid; gap: 1.2rem; }
-
-.lei { padding-bottom: 1.2rem; border-bottom: 1px solid #D7E5EF; }
-
+.lei { padding-bottom: 1.2rem; border-bottom: 1px solid #cfd9e8; }
 .lei h3 { color: var(--azul-escuro); font-size: 1.15rem; margin-bottom: 0.3rem; }
-
 .lei p { color: var(--texto-suave); font-size: 0.95rem; margin-bottom: 0.8rem; }
-
 .aviso { font-size: 0.85rem; color: var(--texto-suave); font-style: italic; }
 
 /* ===== ESPAÇOS DE IMAGEM =====
-
    Cada espaço mostra um aviso até você colocar a imagem na pasta "images". */
-
 .espaco-imagem {
-
   position: relative; overflow: hidden; aspect-ratio: 4 / 3; border-radius: 24px;
-
   display: flex; align-items: center; justify-content: center; text-align: center; padding: 1rem;
-
-  background: rgba(157, 216, 245, 0.25); border: 2px dashed #9DD8F5;
-
+  background: rgba(156, 194, 238, 0.25); border: 2px dashed #9cc2ee;
   color: var(--azul-medio); font-size: 0.9rem;
-
 }
-
 .espaco-imagem::before { content: "Espaço para imagem"; }
-
 .espaco-imagem img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-
-.legislacao .espaco-imagem { margin-top: 1.5rem; color: #D9F0FC; }
+.legislacao .espaco-imagem { margin-top: 1.5rem; color: #d6e4f7; }
 
 /* ===== POR QUE IMPORTA ===== */
-
 .importa { display: grid; grid-template-columns: 1.2fr 1fr; gap: 2.5rem; align-items: center; }
-
 .importa p { margin-bottom: 1rem; color: var(--texto-suave); }
 
 /* ===== BANNER DE CONSCIENTIZAÇÃO ===== */
-
 .conscientizacao {
-
   color: var(--branco);
-
   padding: 5rem 0;
-
-  background: linear-gradient(135deg, #173B5B, #4F91C6);
-
+  background: linear-gradient(135deg, #12294a, #2a5a9a);
 }
-
 .conscientizacao-conteudo { display: grid; grid-template-columns: 1.2fr 1fr; gap: 2.5rem; align-items: center; }
-
-.conscientizacao .espaco-imagem { color: #D9F0FC; }
-
+.conscientizacao .espaco-imagem { color: #d6e4f7; }
 .conscientizacao h2 { color: var(--branco); font-size: clamp(1.8rem, 4vw, 2.6rem); max-width: 18ch; }
-
 .conscientizacao p { max-width: 50ch; margin: 1rem 0 1.8rem; }
 
 /* ===== FAQ (ACORDEÃO) ===== */
-
 .faq { max-width: 800px; }
-
 .faq-item { background: var(--bege); border-radius: 18px; margin-bottom: 0.7rem; overflow: hidden; }
-
 .faq-pergunta {
-
   width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 1rem;
-
   padding: 1rem 1.2rem; background: none; border: 0; cursor: pointer; text-align: left;
-
   font: inherit; font-weight: bold; color: var(--azul-escuro);
-
 }
-
 .faq-sinal { font-size: 1.4rem; transition: transform 0.2s; }
-
 .faq-resposta { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
-
 .faq-resposta p { padding: 0 1.2rem 1.1rem; color: var(--texto-suave); }
-
 .faq-item.aberto .faq-sinal { transform: rotate(45deg); }
 
 /* ===== RODAPÉ ===== */
-
 .rodape { background: var(--azul-escuro); color: var(--branco); padding-top: 3rem; font-size: 0.92rem; }
-
 .rodape-grade { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 2rem; }
-
-.rodape h3 { font-family: inherit; font-size: 1rem; margin-bottom: 0.6rem; color: #9DD8F5; }
-
+.rodape h3 { font-family: inherit; font-size: 1rem; margin-bottom: 0.6rem; color: #9cc2ee; }
 .rodape a { display: block; text-decoration: none; margin-bottom: 0.4rem; opacity: 0.9; }
-
 .rodape a:hover { text-decoration: underline; }
-
 .rodape-nome { font-size: 1.1rem; letter-spacing: 0.06em; }
-
 .rodape-frase { margin-top: 0.8rem; font-style: italic; opacity: 0.85; }
+/* Logo da universidade no rodapé (fundo branco para a logo aparecer bem).
+   A caixa acompanha o tamanho da imagem: mude o "width" para aumentar ou diminuir. */
+.logo-universidade { display: inline-block; margin-bottom: 1rem; padding: 0.7rem 0.9rem; background: var(--branco); border-radius: 16px; }
+.logo-universidade img { display: block; width: 220px; max-width: 100%; height: auto; }
 
 .rodape-fim { margin-top: 2.5rem; padding: 1.2rem 4%; border-top: 1px solid rgba(255, 255, 255, 0.2); text-align: center; font-size: 0.82rem; opacity: 0.8; }
 
 /* ===== TABLET ===== */
-
 @media (max-width: 960px) {
-
   .hero-figura { display: none; }
-
   .encontra, .legislacao-grade, .importa, .conscientizacao-conteudo { grid-template-columns: 1fr; }
-
   .grade-cartoes { grid-template-columns: repeat(2, 1fr); }
-
   .rodape-grade { grid-template-columns: repeat(2, 1fr); }
-
 }
 
 /* ===== CELULAR ===== */
-
 @media (max-width: 700px) {
-
+  .barra-conteudo img { height: 52px; }
+  .barra-conteudo span { font-size: 0.72rem; }
   .menu-botao { display: block; }
-
   .menu {
-
     display: none; position: absolute; top: 100%; left: 0; right: 0;
-
     flex-direction: column; gap: 0; background: var(--azul-escuro);
-
     padding: 0.5rem 4% 1rem; box-shadow: var(--sombra);
-
   }
-
   .menu.aberto { display: flex; }
-
   .menu a { padding: 0.9rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
-
   .hero { min-height: 480px; }
-
   .secao, .legislacao, .conscientizacao { padding: 3rem 0; }
-
   h2 { font-size: 1.6rem; }
-
   .grade-icones { grid-template-columns: repeat(2, 1fr); }
-
   .grade-cartoes, .rodape-grade { grid-template-columns: 1fr; }
-
   .botao { display: block; text-align: center; }
-
 }
 
 /* Respeita quem prefere menos movimento */
-
 @media (prefers-reduced-motion: reduce) {
-
-  \* { transition: none !important; scroll-behavior: auto !important; }
-
+  * { transition: none !important; scroll-behavior: auto !important; }
 }

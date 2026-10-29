@@ -39,7 +39,7 @@ perguntas.forEach(function (botao) {
 // ===== 4. ESPAÇOS DE IMAGEM =====
 // Se a imagem ainda não existe na pasta "images", escondemos o ícone de
 // imagem quebrada e o aviso "Espaço para imagem" continua visível.
-document.querySelectorAll(".espaco-imagem img").forEach(function (img) {
+document.querySelectorAll(".espaco-imagem img, .logo-universidade img").forEach(function (img) {
   function esconder() { img.style.display = "none"; }
   img.addEventListener("error", esconder);
   if (img.complete && img.naturalWidth === 0) { esconder(); }
